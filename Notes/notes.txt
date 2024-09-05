@@ -1,0 +1,131 @@
+How do you create a list in Python? How is it different from a tuple? 
+List : Mutable(Elements can change)
+tuple: Imutable (Elements cannot change)
+List: list creating using [] square braquets
+tuple: tuple creating using ()parenthis
+
+(qoe-2) Explain the difference between == and is in Python.
+(Ans-2) The ==operator checks the value equality it compares the value of two object to determine if they are equal
+The (is) operator checks the identity equality. it determine whether two references point  to the same object in memory
+
+(que-3) What are loops in Python? Explain the difference between for and while loops.
+for loop => The `for`loop is used to iterate over a sequence (like list,tuple, string or range) it automatically goes through each item in the sequence and execute the loop body for each item.
+for example
+for variable in sequence:
+    # code block to execute
+While loop => the `while` loop repeatedly execute a block of a code a long as the given condition is true it is typically used when the number of iteration is not known beforehead
+for example 
+count = 1
+
+while count <= 5:
+    print("Count is:", count)
+    count += 1
+(que -4) What is a dictionary in Python, and how do you access elements from it?
+(Ans-4) A Dictionary in python is unordered, mutable collection of key value pairs Each key in a dictionary 
+student = {
+
+    "name = "john"
+    "age" = 21
+    "major" = "Computer science"
+    "grades" = [25,56,85] 
+}
+(que-5)What is a function in Python? How do you define and call a function?
+(Ans-5) A function in python is reusable code of blocks that perform multiple task 
+def function_jassi(japreet)
+# function body 
+# code to be executed 
+to define a function in pyrhon you use def keyword 
+def greet(name):
+    """
+    This function greets the person whose name is passed as an argument.
+    """
+    print(f"Hello, {name}!")
+
+(que-6) What are *args and **kwargs in Python functions?
+(Ans-6) args allow a function to accept any number (non-keyword arguments)
+the arguments are stored in a tuple
+  def add_numbers(args)
+   '''
+   this function given the sum of all numbers passed to it
+   '''
+      return sum(args)
+ add_numbers(10,20,30,40)
+ add_numbers(1,5,6)
+
+ **kwargs (Keyword Arguments):
+   kwargs allow a function to accept any number of keyword arguments (arguments passes as `key=value`).
+   for example
+   def print_details(kwargs):
+     '''
+     this function prints out the details passed to it as keyword arguments.
+     '''
+     for key , value in kwargs,items():
+     print(d"{key}:{value}")
+
+print_details(name="Alice",age=30, city="New york")
+print_details(name="Bob", profession="Engineer")
+
+(que-7) Explain the concept of a lambda function with an example.
+(Ans-7) a = lambda x,y: x*y
+        z = a(5,6)
+        print(z)
+
+(que-8) What are exceptions in Python? How do you handle exceptions?
+(ans-8) Some common exceptions in python are following
+      (1)- ZeroDivisionError
+      (2)- TypeError
+      (3)- IndexError
+      (4)- Keyerror
+      (5)-ValueError
+      (6)-FileNotFoundError
+      Python provides a way to handle exceptions using the `try`, `except`, `else`, and `finally` blocks. 
+
+(que-9) What are instance variables and class variables?
+      
+(Ans-9) Instance variable 
+(1) Unique to each object
+(2)  defined within method , typically __init__
+(3) prefix with self
+(4) Different objects can have different values for the same instance variable 
+      (Class variable)
+(1) shared among all instance of the class 
+(2) defined directly in class and outside any method 
+(3) access via the class name or any instance  
+(4) All objects share the same value for the class variable 
+
+(Que-10)  How you import method in python 
+(Ans 10)  from math import sqrt
+
+# Now you can use sqrt directly without prefixing it with math.
+result = sqrt(25)
+print(result)  
+
+(Que-11) What is the difference between import and from import
+(Ans-11) 
+Feature	import	                                  from ... import
+Imports	The entire module	                      Specific functions, classes, or variables
+Access	Must use module_name.function_name	      Can use function_name directly
+Verbosity	More verbose	                      Less verbose
+Risk of Naming Conflicts	                      Low	Higher (if names overlap)
+Code Clarity	High (explicit origins)	          Lower (origin might be less obvious)
+
+(que-12) What is the purpose of the with statement in file handling?
+(Ans-12) When you open a file using the `with` statement, Python automatically loses the file when the code of file is executed. This is true even if an exception is raised within the block 
+
+(que-13) What are the different types of sequences in Python?
+(Ans-13) list,tuple,string,rangegs,bytes,bytearray,Memoryview
+
+(que-14) How do you add and remove elements from a list?
+(Ans-14)  To Add elements in a list 
+        1) append method 
+        2) extend method 
+        3) insert method 
+
+(que-15) What are list comprehensions? Provide an example.
+(Ans-15) List comprehensions in Python provide a concise way to create lists. They are a powerful and flexible tool that allows you to generate new lists by applying an expression to each item in an existing iterable (like a list or range) and optionally filtering items based on a condition.
+[expression for item in iterable if condition] 
+    code 
+    squares = [x**2 for x in range(1, 6)]
+print(squares)  # Output: [1, 4, 9, 16, 25]
+
+(que-16) 
